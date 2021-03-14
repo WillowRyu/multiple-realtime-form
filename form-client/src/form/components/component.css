@@ -1,0 +1,43 @@
+.input-block {
+  width: 500px;
+  font-size: 15px;
+  margin-top: 4px;
+  position: relative;
+  padding: 0 var(--input-padding);
+}
+
+.input-block > .input-editable {
+  min-height: 1em;
+  height: 100%;
+  display: flex;
+  word-break: break-all;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.input-block > .input-editable:focus {
+  outline: none;
+}
+
+.input-block:focus {
+  outline: none;
+}
+
+.hover-border {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: black;
+}
+
+.connected-client-wrap {
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  max-height: 200px;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+}
